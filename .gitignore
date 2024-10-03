@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+/*
+!/.gitignore
+!/local/
+# !/projects/
+# !/press-center/
+# !/sitemap/
+# !/include/
+# !/.sitemap.menu.php
+# !/.foo.menu.php
+# !/index.php

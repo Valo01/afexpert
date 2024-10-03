@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="ru">
+  
+  <head>
+    <meta charset="UTF-8">
+    <link href="assets/css/index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/jquery-ui-slider@1.12.1/jquery-ui.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--link(rel="preconnect" href="https://fonts.googleapis.com")-->
+    <!--link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)-->
+    <!--link(href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap"
+    rel="stylesheet")-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1.0.1/dist/hystmodal.min.css">
+    <!--link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    rel='stylesheet')-->
+    <!--link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"
+    media="(min-width: 1024px)")-->
+    <!--link(rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css")-->
+    <!--link(rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="")-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="assets/scripts/index.1.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    defer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-slider@1.12.1/jquery-ui.min.js"
+    defer>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
+    defer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"
+    defer>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"
+    defer integrity="sha512-efAcjYoYT0sXxQRtxGY37CKYmqsFVOIwMApaEbrxJr4RwqVVGw8o+Lfh/+59TU07+suZn1BWq4fDl5fdgyCNkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer>
+    </script>
+    <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js"
+    defer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/hystmodal@1.0.1/dist/hystmodal.min.js"
+    defer>
+    </script>
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    defer)-->
+    <!--script(src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer)-->
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+    integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous")-->
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")-->
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js")-->
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js")-->
+    <!--script(src="https://unpkg.com/locomotive-scroll@4.1.4/dist/locomotive-scroll.js")-->
+    <!--script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js")-->
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js")-->
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")-->
+    <!--script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")-->
+    <!--script(src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin="")-->
+    <title>
+      Интеграция решений
+    </title>
+  </head>
+  
+  <body>
+    <!--предотвращаем нативный скролл до запуска локомотива, скрипт нужнен
+    на всех страницах и как можно раньше, поэтому разместил тут-->
+    <script type="text/javascript">
+      window.addEventListener('scroll',
+      function() {
+        window.scrollTo(0, 0);
+      });
+    </script>
+    <div class="page integration-solutions-page" data-scroll-container>
+      <div class="header__address">
+        <div class="header__address-close">
+        </div>
+        <div class="header__address-content">
+          <h3>
+            Наши адреса
+          </h3>
+          <div class="header__address-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.75 5.25L5.25 18.75" stroke="#262531" stroke-width="2.5" stroke-linecap="square"
+              stroke-linejoin="round" />
+              <path d="M18.75 18.75L5.25 5.25" stroke="#262531" stroke-width="2.5" stroke-linecap="square"
+              stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="header__address-list">
+            <a class="header__address-link" href="javascript:void(0);">
+              <span>
+                г.Москва, ул. Усачева, 62
+              </span>
+              <!--img(src=require("../../icons/long-arrow-blue-left.svg"))-->
+            </a>
+            <a class="header__address-link" href="javascript:void(0);">
+              <span>
+                г. Санкт-Петербург, ул. Мирная, 56, дом 342
+              </span>
+              <!--img(src=require("../../icons/long-arrow-blue-left.svg"))-->
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__search">
+        <div class="header__search-content">
+          <div class="container">
+            <form>
+              <img class="header__search-logo" src="assets/icons/wh-logo.svg" alt="logo">
+              <div class="header__search-input-wrapper">
+                <input class="header__search-input" type="text" placeholder="Что будем искать?"
+                required>
+                <div class="header__search-submit">
+                  <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="search-icon" data-v-61e15438="">
+                    <circle cx="11" cy="11" r="10" stroke="#878EA6" stroke-width="2" data-v-61e15438="">
+                    </circle>
+                    <line x1="18.6585" y1="18.2474" x2="26.6585" y2="25.2474" stroke="#878EA6"
+                    stroke-width="2">
+                    </line>
+                  </svg>
+                </div>
+                <button class="header__search-clear">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none">
+                    <path d="M11.5456 12.5165L11.5014 12.4723L11.4572 12.5165L5.23782 18.7369C5.10881 18.8659 4.93384 18.9383 4.75139 18.9383C4.56895 18.9383 4.39397 18.8659 4.26496 18.7368C4.13595 18.6078 4.06348 18.4329 4.06348 18.2504C4.06348 18.068 4.13595 17.893 4.26496 17.764L10.4853 11.5446L10.5295 11.5004L10.4853 11.4562L4.26496 5.23685C4.26496 5.23685 4.26496 5.23685 4.26496 5.23684C4.13595 5.10784 4.06348 4.93286 4.06348 4.75042C4.06348 4.56797 4.13595 4.393 4.26496 4.26399C4.39397 4.13498 4.56895 4.0625 4.75139 4.0625C4.93384 4.0625 5.10881 4.13498 5.23782 4.26398C5.23782 4.26398 5.23782 4.26399 5.23782 4.26399L11.4572 10.4843L11.5014 10.5285L11.5456 10.4843L17.765 4.26398C17.894 4.13498 18.0689 4.0625 18.2514 4.0625C18.4338 4.0625 18.6088 4.13498 18.7378 4.26399C18.8668 4.393 18.9393 4.56797 18.9393 4.75042C18.9393 4.93286 18.8668 5.10784 18.7378 5.23685L12.5175 11.4562L12.4733 11.5004L12.5175 11.5446L18.7378 17.764C18.8017 17.8279 18.8524 17.9037 18.8869 17.9872C18.9215 18.0706 18.9393 18.1601 18.9393 18.2504C18.9393 18.3408 18.9215 18.4302 18.8869 18.5137C18.8524 18.5971 18.8017 18.673 18.7378 18.7368C18.6739 18.8007 18.5981 18.8514 18.5147 18.886C18.4312 18.9205 18.3417 18.9383 18.2514 18.9383C18.1611 18.9383 18.0716 18.9205 17.9881 18.886C17.9047 18.8514 17.8288 18.8007 17.765 18.7368L11.5456 12.5165Z"
+                    fill="#262531" stroke="#262531" stroke-width="0.125" />
+                  </svg>
+                </button>
+                <div class="header__search-result">
+                  <div class="header__search-result-links">
+                    <a class="header__search-result-link" href="javascript:void(0);">
+                      <strong>
+                        Демонстрация
+                      </strong>
+                      цифровой маркировки на предприятии ООО «КОМОС ГРУПП»
+                    </a>
+                    <a class="header__search-result-link" href="javascript:void(0);">
+                      Семинар и
+                      <strong>
+                        демонстрация
+                      </strong>
+                      по цифровой маркировке молочной продукции
+                    </a>
+                    <a class="header__search-result-link" href="javascript:void(0);">
+                      <strong>
+                        Демонстрация
+                      </strong>
+                      цифровой маркировки на предприятии ООО «КОМОС ГРУПП»
+                    </a>
+                    <a class="header__search-result-link" href="javascript:void(0);">
+                      Семинар и
+                      <strong>
+                        демонстрация
+                      </strong>
+                      по цифровой маркировке молочной продукции
+                    </a>
+                    <a class="header__search-result-link" href="javascript:void(0);">
+                      <strong>
+                        Демонстрация
+                      </strong>
+                      цифровой маркировки на предприятии ООО «КОМОС ГРУПП»
+                    </a>
+                  </div>
+                  <a class="header__search-result-all">
+                    Смотреть все результаты поиска
+                  </a>
+                  <p>
+                    К сожалению, мы не смогли найти ничего по запросу «пространство».
+                    <br>
+                    Попробуйте переформулировать запрос
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="header__burger" id="burgerMenu">
+        <div class="header__burger-content">
+          <div class="container">
+            <div class="mobile-search-wrap">
+              <div class="header__search">
+                <div class="header__search-content">
+                  <div class="container">
+                    <form>
+                      <img class="header__search-logo" src="assets/icons/wh-logo.svg" alt="logo">
+                      <div class="header__search-input-wrapper">
+                        <input class="header__search-input" type="text" placeholder="Что будем искать?"
+                        required>
+                        <div class="header__search-submit">
+                          <svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+                          class="search-icon" data-v-61e15438="">
+                            <circle cx="11" cy="11" r="10" stroke="#878EA6" stroke-width="2" data-v-61e15438="">
+                            </circle>
+                            <line x1="18.6585" y1="18.2474" x2="26.6585" y2="25.2474" stroke="#878EA6"
+                            stroke-width="2">
+                            </line>
+                          </svg>
+                        </div>
+                        <button class="header__search-clear">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                          fill="none">
+                            <path d="M11.5456 12.5165L11.5014 12.4723L11.4572 12.5165L5.23782 18.7369C5.10881 18.8659 4.93384 18.9383 4.75139 18.9383C4.56895 18.9383 4.39397 18.8659 4.26496 18.7368C4.13595 18.6078 4.06348 18.4329 4.06348 18.2504C4.06348 18.068 4.13595 17.893 4.26496 17.764L10.4853 11.5446L10.5295 11.5004L10.4853 11.4562L4.26496 5.23685C4.26496 5.23685 4.26496 5.23685 4.26496 5.23684C4.13595 5.10784 4.06348 4.93286 4.06348 4.75042C4.06348 4.56797 4.13595 4.393 4.26496 4.26399C4.39397 4.13498 4.56895 4.0625 4.75139 4.0625C4.93384 4.0625 5.10881 4.13498 5.23782 4.26398C5.23782 4.26398 5.23782 4.26399 5.23782 4.26399L11.4572 10.4843L11.5014 10.5285L11.5456 10.4843L17.765 4.26398C17.894 4.13498 18.0689 4.0625 18.2514 4.0625C18.4338 4.0625 18.6088 4.13498 18.7378 4.26399C18.8668 4.393 18.9393 4.56797 18.9393 4.75042C18.9393 4.93286 18.8668 5.10784 18.7378 5.23685L12.5175 11.4562L12.4733 11.5004L12.5175 11.5446L18.7378 17.764C18.8017 17.8279 18.8524 17.9037 18.8869 17.9872C18.9215 18.0706 18.9393 18.1601 18.9393 18.2504C18.9393 18.3408 18.9215 18.4302 18.8869 18.5137C18.8524 18.5971 18.8017 18.673 18.7378 18.7368C18.6739 18.8007 18.5981 18.8514 18.5147 18.886C18.4312 18.9205 18.3417 18.9383 18.2514 18.9383C18.1611 18.9383 18.0716 18.9205 17.9881 18.886C17.9047 18.8514 17.8288 18.8007 17.765 18.7368L11.5456 12.5165Z"
+                            fill="#262531" stroke="#262531" stroke-width="0.125" />
+                          </svg>
+                        </button>
+                        <div class="header__search-result">
+                          <div class="header__search-result-links">
+                            <a class="header__search-result-link" href="javascript:void(0);">
+                              <strong>
+                                Демонстрация
+                              </strong>
+                              цифровой маркировки на предприятии ООО «КОМОС ГРУПП»
+                            </a>
+                            <a class="header__search-result-link" href="javascript:void(0);">
+                              Семинар и
+                              <strong>
+                                демонстрация
+                              </strong>
+                              по цифровой маркировке молочной продукции
+                            </a>
+                            <a class="header__search-result-link" href="javascript:void(0);">
+                              <strong>
+                                Демонстрация
+                              </strong>
+                              цифровой маркировки на предприятии ООО «КОМОС ГРУПП»
+                            </a>
+                            <a class="header__search-result-link" href="javascript:void(0);">
+                              Семинар и
+                              <strong>
+                                демонстрация
+                              </strong>
+                              по цифровой маркировке молочной продукции
+                            </a>
+                            <a class="header__search-result-link" href="javascript:void(0);">
+                              <strong>
+                                Демонстрация
+                              </strong>
+                              цифровой маркировки на предприятии ООО «КОМОС ГРУПП»
+                            </a>
+                          </div>
+                          <a class="header__search-result-all">
+                            Смотреть все результаты поиска
+                          </a>
+                          <p>
+                            К сожалению, мы не смогли найти ничего по запросу «пространство».
+                            <br>
+                            Попробуйте переформулировать запрос
+                          </p>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__burger-menu">
+              <div class="header__burger-menu--top">
+                <div class="header__burger-menu-items active">
+                  <div class="header__burger-menu-item" data-id="1">
+                    Технологичные решения
+                  </div>
+                  <div class="header__burger-menu-item" data-id="2">
+                    Отраслевые решения
+                  </div>
+                  <div class="header__burger-menu-item" data-id="3">
+                    Услуги
+                  </div>
+                  <div class="header__burger-menu-item" data-id="4">
+                    О компании
+                  </div>
+                  <div class="header__burger-menu-item header__burger-menu-item--mobile"
+                  data-id="5">
+                    Наши адеса
+                  </div>
+                </div>
+                <div class="header__burger-submenu">
+                  <div class="header__burger-submenu-item submenu-tech" data-id="1">
+                    <div class="submenu__back-btn">
+                      Назад
+                    </div>
+                    <div class="submenu__item-title">
+                      Технологичные решения
+                    </div>
+                    <div class="submenu-cards">
+                      <a class="submenu__card" href="#">
+                        <p class="submenu__card-title">
+                          Автомат тиснения
+                          <br>
+                          с ориентатором Labeling
+                          <br>
+                          machine
+                        </p>
+                        <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                        <img class="submenu__card-img" src="assets/images/tech_card_1.png">
+                      </a>
+                      <a class="submenu__card" href="#">
+                        <p class="submenu__card-title">
+                          Автомат лакировальный
+                          <br>
+                          AM Labeling machine
+                        </p>
+                        <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                        <img class="submenu__card-img" src="assets/images/tech_card_2.png">
+                      </a>
+                      <a class="submenu__card" href="#">
+                        <p class="submenu__card-title">
+                          Автомат тиснения с ориентатором
+                          <br>
+                          Labeling machine
+                        </p>
+                        <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                        <img class="submenu__card-img" src="assets/images/tech_card_1.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="header__burger-submenu-item submenu-industry" data-id="2">
+                    <div class="submenu__back-btn">
+                      Назад
+                    </div>
+                    <div class="submenu__item-title">
+                      Отраслевые решения
+                    </div>
+                  </div>
+                  <div class="header__burger-submenu-item submenu-services" data-id="3">
+                    <div class="submenu__back-btn">
+                      Назад
+                    </div>
+                    <div class="submenu__item-title">
+                      Услуги
+                    </div>
+                    <div class="submenu-cards">
+                      <div class="submenu__card">
+                        <img class="submenu__card-img" src="assets/images/service_card_1.jpg">
+                        <p class="submenu__card-title">
+                          Интеграция решений
+                        </p>
+                        <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                      </div>
+                      <div class="submenu__card">
+                        <img class="submenu__card-img" src="assets/images/service_card_2.jpg">
+                        <p class="submenu__card-title">
+                          Разработка ПО (АСУ ТП)
+                        </p>
+                        <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                      </div>
+                      <div class="submenu__card">
+                        <img class="submenu__card-img" src="assets/images/service_card_3.jpg">
+                        <p class="submenu__card-title">
+                          Консалтинг
+                        </p>
+                        <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                      </div>
+                      <div class="submenu__card">
+                        <img class="submenu__card-img" src="assets/images/service_card_4.jpg">
+                        <p class="submenu__card-title">
+                          Техноаудит
+                        </p>
+                        <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                      </div>
+                    </div>
+                    <a class="submenu-more-btn btn__big-gray" href="#">
+                      Смотреть все
+                    </a>
+                  </div>
+                  <div class="header__burger-submenu-item submenu-about" data-id="4">
+                    <div class="submenu__back-btn">
+                      Назад
+                    </div>
+                    <div class="submenu__item-title">
+                      О компании
+                    </div>
+                  </div>
+                  <div class="header__burger-submenu-item submenu-addresses" data-id="5">
+                    <div class="submenu__back-btn">
+                      Назад
+                    </div>
+                    <div class="submenu__item-title">
+                      Наши адреса
+                    </div>
+                    <div class="submenu__address-list">
+                      <a class="submenu__address-link" href="javascript:void(0);">
+                        <span>
+                          г.Москва, Саввинская наб. 23 стр 1.
+                          <br>
+                          БЦ «Московский шёлк»
+                        </span>
+                      </a>
+                      <a class="submenu__address-link" href="javascript:void(0);">
+                        <span>
+                          г. Санкт-Петербург, ул. Мирная 56, дом 342
+                        </span>
+                      </a>
+                      <a class="submenu__address-link" href="javascript:void(0);">
+                        <span>
+                          г. Москва, Саввинская наб. 23 стр 1.
+                        </span>
+                      </a>
+                      <a class="submenu__address-link" href="javascript:void(0);">
+                        <span>
+                          г. Санкт-Петербург, ул. Мирная 56, дом 342
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__burger-menu--bottom">
+                <a class="header__burger-menu-link" href="#">
+                  Проекты
+                </a>
+                <a class="header__burger-menu-link" href="#">
+                  Пресс-центр
+                </a>
+                <a class="header__burger-menu-link" href="#">
+                  Контакты
+                </a>
+                <a class="header__btn header__btn-phone" href="tel:+78007073187">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Phone">
+                      <path id="Vector" d="M20.7741 15.0279L16.3453 13.0432C16.1447 12.9573 15.9257 12.9227 15.7083 12.9427C15.4909 12.9626 15.282 13.0365 15.1003 13.1576C15.0819 13.1695 15.0643 13.1826 15.0478 13.197L12.7331 15.1657C12.7091 15.1788 12.6824 15.1862 12.655 15.1871C12.6277 15.1881 12.6005 15.1827 12.5756 15.1714C11.0878 14.4532 9.54657 12.9214 8.82563 11.4542C8.81362 11.4297 8.80738 11.4027 8.80738 11.3754C8.80738 11.3481 8.81362 11.3212 8.82563 11.2967L10.8009 8.95293C10.8151 8.93559 10.8283 8.91744 10.8403 8.89856C10.9597 8.71622 11.0319 8.50701 11.0502 8.28981C11.0685 8.07262 11.0325 7.85427 10.9453 7.6545L8.97469 3.23325C8.86278 2.97226 8.66924 2.7546 8.42312 2.61295C8.177 2.47129 7.89158 2.41328 7.60969 2.44762C6.38459 2.60868 5.26005 3.21031 4.44621 4.14009C3.63238 5.06987 3.18494 6.26417 3.1875 7.49981C3.1875 14.8404 9.15938 20.8123 16.5 20.8123C17.7356 20.8147 18.9298 20.3672 19.8595 19.5534C20.7893 18.7396 21.3909 17.6151 21.5522 16.3901C21.5865 16.1096 21.5292 15.8254 21.389 15.58C21.2488 15.3345 21.0332 15.1409 20.7741 15.0279ZM16.5 19.6873C9.78 19.6873 4.3125 14.2198 4.3125 7.49981C4.30937 6.53787 4.65657 5.60769 5.28923 4.88307C5.9219 4.15845 6.79674 3.68895 7.75032 3.56231H7.77188C7.80966 3.56301 7.84634 3.57512 7.87712 3.59703C7.90791 3.61895 7.93135 3.64965 7.94438 3.68512L9.9225 8.10168C9.93378 8.12624 9.93963 8.15294 9.93963 8.17997C9.93963 8.20699 9.93378 8.23369 9.9225 8.25825L7.94344 10.6076C7.92868 10.6244 7.9152 10.6423 7.90313 10.6611C7.77929 10.8501 7.70637 11.0679 7.69142 11.2934C7.67647 11.519 7.72001 11.7445 7.81782 11.9482C8.64938 13.6507 10.365 15.3532 12.0863 16.1848C12.2912 16.2821 12.5178 16.3246 12.7441 16.3081C12.9703 16.2917 13.1885 16.2169 13.3772 16.0911C13.395 16.0789 13.4128 16.0657 13.4297 16.0517L15.7434 14.0829C15.7663 14.0707 15.7915 14.0635 15.8174 14.0618C15.8433 14.0602 15.8692 14.0642 15.8934 14.0736L20.3231 16.0582C20.3593 16.0737 20.3897 16.1001 20.4101 16.1337C20.4304 16.1673 20.4397 16.2065 20.4366 16.2457C20.3106 17.1998 19.8415 18.0753 19.1171 18.7086C18.3926 19.342 17.4623 19.6899 16.5 19.6873Z"
+                      fill="white" />
+                    </g>
+                  </svg>
+                  8 800 707-31-87
+                </a>
+                <button class="header__btn header__btn-collback blue" data-hystmodal="#m-application">
+                  Обратный звонок
+                </button>
+                <div class="header__burger-social">
+                  <a class="header__burger-social-link" href="#">
+                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.3749 7.31839C6.74359 4.9193 10.3236 3.33767 12.1148 2.5735C17.2292 0.391658 18.2919 0.0126486 18.9846 0.000133439C19.1369 -0.00261913 19.4776 0.0361057 19.6982 0.219742C19.8845 0.374801 19.9358 0.584264 19.9603 0.731277C19.9848 0.87829 20.0154 1.21319 19.9911 1.47487C19.714 4.46165 18.5147 11.7098 17.9046 15.055C17.6465 16.4705 17.1382 16.9451 16.6461 16.9916C15.5766 17.0925 14.7645 16.2667 13.7287 15.5702C12.1078 14.4805 11.1921 13.8021 9.61879 12.7387C7.80053 11.5097 8.97923 10.8343 10.0154 9.73037C10.2866 9.44148 14.9987 5.04547 15.0899 4.64668C15.1013 4.59681 15.1119 4.41089 15.0042 4.31273C14.8965 4.21456 14.7376 4.24813 14.6229 4.27483C14.4604 4.31267 11.871 6.06807 6.85486 9.54101C6.11988 10.0587 5.45416 10.3109 4.8577 10.2977C4.20015 10.2831 2.93528 9.91632 1.99498 9.60282C0.84166 9.2183 -0.074973 9.01501 0.00484519 8.36197C0.0464194 8.02183 0.503103 7.67397 1.3749 7.31839Z"
+                      fill="#31303B" />
+                    </svg>
+                  </a>
+                  <a class="header__burger-social-link" href="#">
+                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8136 0.418176C18.6746 0.648666 19.3513 1.32532 19.5818 2.18637C19.9983 3.74547 20 7.00033 20 7.00033C20 7.00033 20 10.2552 19.5818 11.8143C19.3513 12.6754 18.6746 13.352 17.8136 13.5825C16.2545 14.0007 9.99996 14.0007 9.99996 14.0007C9.99996 14.0007 3.74547 14.0007 2.18636 13.5825C1.32532 13.352 0.648666 12.6754 0.418176 11.8143C0 10.2552 0 7.00033 0 7.00033C0 7.00033 0 3.74547 0.418176 2.18637C0.648666 1.32532 1.32532 0.648666 2.18636 0.418176C3.74547 0 9.99996 0 9.99996 0C9.99996 0 16.2545 0 17.8136 0.418176ZM13 7.00002L8 10V4L13 7.00002Z"
+                      fill="#31303B" />
+                    </svg>
+                  </a>
+                  <a class="header__burger-social-link" href="#">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.157748 7.32244C-0.250946 9.47663 0.140817 11.7059 1.25947 13.5917L1.25954 13.5917L0.371049 16.7014C0.334289 16.83 0.332603 16.9662 0.366167 17.0957C0.399731 17.2252 0.467324 17.3434 0.561941 17.4381C0.656557 17.5327 0.774755 17.6003 0.904285 17.6338C1.03382 17.6674 1.16996 17.6657 1.29862 17.629L4.40835 16.7405L4.40833 16.7406C6.29412 17.8592 8.52342 18.2509 10.6776 17.8422C12.8318 17.4335 14.7627 16.2525 16.1077 14.5209C17.4527 12.7893 18.1194 10.6262 17.9824 8.43785C17.8455 6.24952 16.9144 4.18644 15.3639 2.63603C13.8135 1.08562 11.7504 0.15452 9.5621 0.0175805C7.37376 -0.119359 5.2107 0.547277 3.47909 1.89231C1.74748 3.23734 0.566443 5.16825 0.157748 7.32244ZM8.57758 13.4382C9.47819 13.8105 10.4434 14.0014 11.4179 14C12.1031 13.9952 12.7587 13.7202 13.2422 13.2348C13.7257 12.7493 13.998 12.0926 14 11.4074C14 11.2949 13.9703 11.1844 13.9138 11.0871C13.8573 10.9898 13.7761 10.9091 13.6784 10.8533L11.784 9.77079C11.6698 9.70551 11.5402 9.67183 11.4087 9.67323C11.2771 9.67463 11.1483 9.71105 11.0354 9.77875L9.5865 10.6481C8.59393 10.2008 7.79916 9.40607 7.3519 8.4135L8.22126 6.96457C8.28895 6.85174 8.32538 6.72291 8.32677 6.59134C8.32817 6.45977 8.2945 6.33019 8.22922 6.21595L7.14671 4.32157C7.09089 4.22388 7.01024 4.14269 6.91293 4.08622C6.81562 4.02974 6.7051 4 6.59259 4C5.90664 3.99942 5.24846 4.27093 4.76243 4.75499C4.2764 5.23904 4.00221 5.89611 4.00001 6.58207C3.99862 7.55659 4.18955 8.52181 4.56184 9.42242C4.93414 10.323 5.48049 11.1413 6.16958 11.8304C6.85867 12.5195 7.67697 13.0659 8.57758 13.4382Z"
+                      fill="#31303B" />
+                    </svg>
+                  </a>
+                  <a class="header__burger-social-link" href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.00440602 9.7003C0.00147552 9.79985 0 9.8997 0 10C0 10.1002 0.00147548 10.2001 0.00440589 10.2997C4.05552 10.3502 6.33289 10.6273 7.85283 12.1472C9.37269 13.6671 9.64978 15.9445 9.7003 19.9956C9.79985 19.9985 9.89978 20 10 20C10.1002 20 10.2001 19.9985 10.2997 19.9956C10.3502 15.9445 10.6273 13.6671 12.1472 12.1472C13.6671 10.6273 15.9445 10.3502 19.9956 10.2997C19.9985 10.2001 20 10.1002 20 10C20 9.8997 19.9985 9.79985 19.9956 9.7003C15.9445 9.64978 13.6671 9.37269 12.1472 7.85275C10.6273 6.33288 10.3502 4.05551 10.2997 0.00440574C10.2001 0.00147543 10.1002 0 10 0C9.89978 0 9.79985 0.00147545 9.7003 0.00440583C9.64978 4.05551 9.37269 6.33289 7.85283 7.85275C6.33289 9.37269 4.05551 9.64978 0.00440602 9.7003Z"
+                      fill="#31303B" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.7003 0V0.00440583C9.79985 0.00147545 9.89978 0 10 0C10.1002 0 10.2001 0.00147543 10.2997 0.00440574V0H10H9.7003ZM0 9.7003H0.00440602C0.00147552 9.79985 0 9.8997 0 10V9.7003ZM0.00440589 10.2997C0.00147548 10.2001 0 10.1002 0 10V10.2997H0.00440589ZM9.7003 19.9956L9.70037 20H10H10.2997V19.9956C10.2001 19.9985 10.1002 20 10 20C9.89978 20 9.79985 19.9985 9.7003 19.9956ZM20 10.2996L19.9956 10.2997C19.9985 10.2001 20 10.1002 20 10V10.2996ZM20 9.7003V10C20 9.8997 19.9985 9.79985 19.9956 9.7003H20Z"
+                      fill="#31303B" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header__burger-submenu">
+              <div class="header__burger-submenu-item submenu-tech active" data-id="1">
+                <div class="submenu-cards">
+                  <a class="submenu__card" href="#">
+                    <p class="submenu__card-title">
+                      Автомат тиснения
+                      <br>
+                      с ориентатором Labeling
+                      <br>
+                      machine
+                    </p>
+                    <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                    <img class="submenu__card-img" src="assets/images/tech_card_1.png">
+                  </a>
+                  <a class="submenu__card" href="#">
+                    <p class="submenu__card-title">
+                      Автомат лакировальный
+                      <br>
+                      AM Labeling machine
+                    </p>
+                    <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                    <img class="submenu__card-img" src="assets/images/tech_card_2.png">
+                  </a>
+                  <a class="submenu__card" href="#">
+                    <p class="submenu__card-title">
+                      Автомат тиснения с ориентатором
+                      <br>
+                      Labeling machine
+                    </p>
+                    <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                    <img class="submenu__card-img" src="assets/images/tech_card_1.png">
+                  </a>
+                </div>
+              </div>
+              <div class="header__burger-submenu-item submenu-industry" data-id="2">
+              </div>
+              <div class="header__burger-submenu-item submenu-services" data-id="3">
+                <div class="submenu-cards">
+                  <div class="submenu__card">
+                    <img class="submenu__card-img" src="assets/images/service_card_1.jpg">
+                    <p class="submenu__card-title">
+                      Интеграция решений
+                    </p>
+                    <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                  </div>
+                  <div class="submenu__card">
+                    <img class="submenu__card-img" src="assets/images/service_card_2.jpg">
+                    <p class="submenu__card-title">
+                      Разработка ПО (АСУ ТП)
+                    </p>
+                    <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                  </div>
+                  <div class="submenu__card">
+                    <img class="submenu__card-img" src="assets/images/service_card_3.jpg">
+                    <p class="submenu__card-title">
+                      Консалтинг
+                    </p>
+                    <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                  </div>
+                  <div class="submenu__card">
+                    <img class="submenu__card-img" src="assets/images/service_card_4.jpg">
+                    <p class="submenu__card-title">
+                      Техноаудит
+                    </p>
+                    <img class="submenu__card-goto" src="assets/icons/arrow-link.svg">
+                  </div>
+                </div>
+                <a class="submenu-more-btn btn__big-gray" href="#">
+                  Смотреть все
+                </a>
+              </div>
+              <div class="header__burger-submenu-item submenu-about" data-id="4">
+              </div>
+              <div class="header__burger-submenu-item submenu-addresses" data-id="5">
+                <div class="submenu__address-list">
+                  <a class="submenu__address-link" href="javascript:void(0);">
+                    <span>
+                      г.Москва, Саввинская наб. 23 стр 1.
+                      <br>
+                      БЦ «Московский шёлк»
+                    </span>
+                  </a>
+                  <a class="submenu__address-link" href="javascript:void(0);">
+                    <span>
+                      г. Санкт-Петербург, ул. Мирная 56, дом 342
+                    </span>
+                  </a>
+                  <a class="submenu__address-link" href="javascript:void(0);">
+                    <span>
+                      г. Москва, Саввинская наб. 23 стр 1.
+                    </span>
+                  </a>
+                  <a class="submenu__address-link" href="javascript:void(0);">
+                    <span>
+                      г. Санкт-Петербург, ул. Мирная 56, дом 342
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header visible">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__left">
+              <a class="header__logo">
+                <img class="white" src="assets/icons/logo.svg" alt="logo">
+                <img class="blue" src="assets/icons/logo--blue.svg" alt="logo">
+              </a>
+              <div class="header__btns">
+                <button class="header__btn burger js-btn-visible js-header-btn-burger">
+                  <span class="_open">
+                    Меню
+                  </span>
+                  <span class="_close">
+                    Закрыть
+                  </span>
+                  <div class="burger__btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect class="svg-hide" x="11.4001" y="3" width="2.8" height="2.8" transform="rotate(90 11.4001 3)"
+                      fill="#4B23EB" />
+                      <rect x="17" y="3" width="2.8" height="2.8" transform="rotate(90 17 3)"
+                      fill="#4B23EB" />
+                      <rect x="5.80005" y="3" width="2.8" height="2.8" transform="rotate(90 5.80005 3)"
+                      fill="#4B23EB" />
+                      <rect x="11.4001" y="8.6001" width="2.8" height="2.8" transform="rotate(90 11.4001 8.6001)"
+                      fill="#4B23EB" />
+                      <rect class="svg-hide" x="17" y="8.6001" width="2.8" height="2.8" transform="rotate(90 17 8.6001)"
+                      fill="#4B23EB" />
+                      <rect class="svg-hide" x="11.4001" y="14.1997" width="2.8" height="2.8"
+                      transform="rotate(90 11.4001 14.1997)" fill="#4B23EB" />
+                      <rect x="17" y="14.1997" width="2.8" height="2.8" transform="rotate(90 17 14.1997)"
+                      fill="#4B23EB" />
+                      <rect class="svg-hide" x="5.80005" y="8.6001" width="2.8" height="2.8"
+                      transform="rotate(90 5.80005 8.6001)" fill="#4B23EB" />
+                      <rect x="5.80005" y="14.1997" width="2.8" height="2.8" transform="rotate(90 5.80005 14.1997)"
+                      fill="#4B23EB" />
+                    </svg>
+                  </div>
+                </button>
+                <button class="header__btn header__btn-search js-header-btn-search js-btn-visible">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="MagnifyingGlass">
+                      <path id="Vector" d="M21.3975 20.6023L16.5806 15.7854C17.9542 14.2057 18.6608 12.1545 18.5515 10.064C18.4422 7.9735 17.5255 6.00712 15.9946 4.57934C14.4638 3.15157 12.4384 2.37395 10.3453 2.41041C8.25232 2.44686 6.25521 3.29454 4.775 4.77475C3.29478 6.25497 2.4471 8.25208 2.41065 10.3451C2.3742 12.4381 3.15182 14.4635 4.57959 15.9944C6.00736 17.5253 7.97374 18.442 10.0642 18.5513C12.1547 18.6606 14.206 17.954 15.7856 16.5804L20.6025 21.3973C20.7091 21.4966 20.8502 21.5507 20.9959 21.5481C21.1416 21.5456 21.2807 21.4865 21.3837 21.3835C21.4868 21.2804 21.5458 21.1414 21.5484 20.9957C21.551 20.8499 21.4969 20.7089 21.3975 20.6023ZM3.5625 10.4998C3.5625 9.12765 3.96938 7.78636 4.73168 6.64549C5.49399 5.50463 6.57748 4.61543 7.84514 4.09035C9.1128 3.56526 10.5077 3.42788 11.8534 3.69556C13.1992 3.96325 14.4353 4.62398 15.4056 5.59421C16.3758 6.56443 17.0365 7.80058 17.3042 9.14632C17.5719 10.4921 17.4345 11.887 16.9094 13.1546C16.3843 14.4223 15.4951 15.5058 14.3543 16.2681C13.2134 17.0304 11.8721 17.4373 10.5 17.4373C8.66075 17.435 6.89747 16.7034 5.59692 15.4028C4.29637 14.1023 3.56474 12.339 3.5625 10.4998Z"
+                      fill="white" />
+                    </g>
+                  </svg>
+                  Поиск
+                </button>
+                <button class="header__btn header__btn-address js-header-btn-address js-btn-visible">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="MapPin">
+                      <path id="Vector" d="M12 6.1875C11.2954 6.1875 10.6066 6.39644 10.0208 6.78789C9.43493 7.17934 8.97832 7.73573 8.70868 8.38669C8.43904 9.03765 8.36849 9.75395 8.50595 10.445C8.64341 11.1361 8.98271 11.7708 9.48093 12.2691C9.97916 12.7673 10.6139 13.1066 11.305 13.244C11.996 13.3815 12.7123 13.311 13.3633 13.0413C14.0143 12.7717 14.5707 12.3151 14.9621 11.7292C15.3536 11.1434 15.5625 10.4546 15.5625 9.75C15.5625 8.80517 15.1872 7.89903 14.5191 7.23093C13.851 6.56283 12.9448 6.1875 12 6.1875ZM12 12.1875C11.5179 12.1875 11.0466 12.0445 10.6458 11.7767C10.245 11.5089 9.93253 11.1282 9.74804 10.6828C9.56356 10.2374 9.51528 9.7473 9.60934 9.27447C9.70339 8.80164 9.93554 8.36732 10.2764 8.02643C10.6173 7.68554 11.0516 7.45339 11.5245 7.35934C11.9973 7.26528 12.4874 7.31356 12.9328 7.49804C13.3782 7.68253 13.7589 7.99495 14.0267 8.3958C14.2945 8.79664 14.4375 9.26791 14.4375 9.75C14.4375 10.3965 14.1807 11.0165 13.7236 11.4736C13.2665 11.9307 12.6465 12.1875 12 12.1875ZM12 1.6875C9.86245 1.68998 7.81317 2.54022 6.30169 4.05169C4.79022 5.56317 3.93998 7.61245 3.9375 9.75C3.9375 12.6478 5.28188 15.7256 7.82531 18.6506C8.97329 19.9773 10.2653 21.1722 11.6775 22.2131C11.772 22.2793 11.8846 22.3148 12 22.3148C12.1154 22.3148 12.228 22.2793 12.3225 22.2131C13.7347 21.1722 15.0267 19.9773 16.1747 18.6506C18.7181 15.7256 20.0625 12.6506 20.0625 9.75C20.06 7.61245 19.2098 5.56317 17.6983 4.05169C16.1868 2.54022 14.1375 1.68998 12 1.6875ZM12 21.0478C10.5938 19.9622 5.0625 15.3394 5.0625 9.75C5.0625 7.91006 5.79341 6.14548 7.09445 4.84445C8.39548 3.54341 10.1601 2.8125 12 2.8125C13.8399 2.8125 15.6045 3.54341 16.9056 4.84445C18.2066 6.14548 18.9375 7.91006 18.9375 9.75C18.9375 15.3394 13.4062 19.9622 12 21.0478Z"
+                      fill="#ffffff" />
+                    </g>
+                  </svg>
+                  Наши адреса
+                </button>
+              </div>
+            </div>
+            <div class="header__right">
+              <a class="header__btn header__btn-phone" href="tel:+78007073187">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Phone">
+                    <path id="Vector" d="M20.7741 15.0279L16.3453 13.0432C16.1447 12.9573 15.9257 12.9227 15.7083 12.9427C15.4909 12.9626 15.282 13.0365 15.1003 13.1576C15.0819 13.1695 15.0643 13.1826 15.0478 13.197L12.7331 15.1657C12.7091 15.1788 12.6824 15.1862 12.655 15.1871C12.6277 15.1881 12.6005 15.1827 12.5756 15.1714C11.0878 14.4532 9.54657 12.9214 8.82563 11.4542C8.81362 11.4297 8.80738 11.4027 8.80738 11.3754C8.80738 11.3481 8.81362 11.3212 8.82563 11.2967L10.8009 8.95293C10.8151 8.93559 10.8283 8.91744 10.8403 8.89856C10.9597 8.71622 11.0319 8.50701 11.0502 8.28981C11.0685 8.07262 11.0325 7.85427 10.9453 7.6545L8.97469 3.23325C8.86278 2.97226 8.66924 2.7546 8.42312 2.61295C8.177 2.47129 7.89158 2.41328 7.60969 2.44762C6.38459 2.60868 5.26005 3.21031 4.44621 4.14009C3.63238 5.06987 3.18494 6.26417 3.1875 7.49981C3.1875 14.8404 9.15938 20.8123 16.5 20.8123C17.7356 20.8147 18.9298 20.3672 19.8595 19.5534C20.7893 18.7396 21.3909 17.6151 21.5522 16.3901C21.5865 16.1096 21.5292 15.8254 21.389 15.58C21.2488 15.3345 21.0332 15.1409 20.7741 15.0279ZM16.5 19.6873C9.78 19.6873 4.3125 14.2198 4.3125 7.49981C4.30937 6.53787 4.65657 5.60769 5.28923 4.88307C5.9219 4.15845 6.79674 3.68895 7.75032 3.56231H7.77188C7.80966 3.56301 7.84634 3.57512 7.87712 3.59703C7.90791 3.61895 7.93135 3.64965 7.94438 3.68512L9.9225 8.10168C9.93378 8.12624 9.93963 8.15294 9.93963 8.17997C9.93963 8.20699 9.93378 8.23369 9.9225 8.25825L7.94344 10.6076C7.92868 10.6244 7.9152 10.6423 7.90313 10.6611C7.77929 10.8501 7.70637 11.0679 7.69142 11.2934C7.67647 11.519 7.72001 11.7445 7.81782 11.9482C8.64938 13.6507 10.365 15.3532 12.0863 16.1848C12.2912 16.2821 12.5178 16.3246 12.7441 16.3081C12.9703 16.2917 13.1885 16.2169 13.3772 16.0911C13.395 16.0789 13.4128 16.0657 13.4297 16.0517L15.7434 14.0829C15.7663 14.0707 15.7915 14.0635 15.8174 14.0618C15.8433 14.0602 15.8692 14.0642 15.8934 14.0736L20.3231 16.0582C20.3593 16.0737 20.3897 16.1001 20.4101 16.1337C20.4304 16.1673 20.4397 16.2065 20.4366 16.2457C20.3106 17.1998 19.8415 18.0753 19.1171 18.7086C18.3926 19.342 17.4623 19.6899 16.5 19.6873Z"
+                    fill="white" />
+                  </g>
+                </svg>
+                8 800 707-31-87
+              </a>
+              <button class="header__btn header__btn-collback blue js-btn-visible" data-hystmodal="#m-application">
+                Обратный звонок
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="wrapper">
+        <section class="a-intro-p" data-scroll-section data-scroll-id="a-intro-p">
+          <img class="a-intro-p__bg" src="assets/images/service-1.jpg" alt="Фон">
+          <div class="container">
+            <div class="breadcrumbs">
+              <a class="breadcrumbs__item breadcrumbs__link" href="#">
+                Главная /
+              </a>
+              <a class="breadcrumbs__item breadcrumbs__link" href="#">
+                Услуги /
+              </a>
+              <span class="breadcrumbs__item breadcrumbs__text">
+                Интеграция решений
+              </span>
+            </div>
+            <h1 class="a-intro-p__title">
+              Интеграция решений
+            </h1>
+            <span class="a-intro-p__subtitle">
+              Внедряем роботов и оборудование для автоматизации производств
+            </span>
+            <p class="a-intro-p__text">
+            </p>
+            <button class="btn a-intro-p__btn" data-hystmodal="#m-application">
+              <span>
+                Запросить консультацию
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none">
+                <path d="M8.91016 19.92L15.4302 13.4C16.2002 12.63 16.2002 11.37 15.4302 10.6L8.91016 4.08002"
+                stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </section>
+        <section class="a-desc" data-scroll-section data-scroll-id="a-desc">
+          <div class="container smooth-show" data-scroll data-scroll-offset="120"
+          data-scroll-repeat>
+            <h2 class="a-desc__title">
+              Описание работы
+            </h2>
+            <div class="a-desc__block-text">
+              <h3 class="a-desc__text-title">
+                Интегрируем оборудование для автоматизации, промышленных портальных роботов,
+                4-х и 6-осевых шарнирных роботов.
+              </h3>
+              <div class="a-desc__text">
+                <p>
+                  Роботизированные комплексы выполняют функции без участия человека, ускоряют
+                  производственный процесс, повышают производительность и увеличивают объём
+                  выпуска.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="a-section-cards" data-scroll-section data-scroll-id="a-section-cards">
+          <div class="container">
+            <h2 class="a-section-cards__title smooth-show" data-scroll data-scroll-offset="120"
+            data-scroll-repeat>
+              Разрабатываем
+            </h2>
+            <div class="a-section-cards__wrap-cards smooth-show" data-scroll data-scroll-offset="120"
+            data-scroll-repeat>
+              <div class="a-info-card">
+                <div class="a-info-card__block-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                  fill="none">
+                    <path d="M32.6264 32.63C33.7219 31.5312 33.7202 29.7527 32.6225 28.6561C31.5248 27.5595 29.7463 27.5595 28.6486 28.6561C27.5509 29.7527 27.5492 31.5312 28.6447 32.63C29.1708 33.1617 29.8876 33.4609 30.6356 33.4609C31.3835 33.4609 32.1004 33.1617 32.6264 32.63"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M28.4386 7.62002C25.1942 5.38521 21.1945 4.53144 17.3203 5.24669"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M30.6337 6.54664C29.0838 6.55032 27.8299 7.80894 27.832 9.35885C27.8342 10.9088 29.0916 12.1639 30.6415 12.1633C32.1914 12.1627 33.4478 10.9066 33.4487 9.35664C33.4489 8.61045 33.1522 7.89484 32.6241 7.36768C32.096 6.84052 31.3799 6.54511 30.6337 6.54664"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M7.62514 11.5466C5.38692 14.7815 4.53094 18.7753 5.24681 22.6433"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M6.55078 9.35835C6.5491 10.4969 7.23359 11.5242 8.28493 11.9612C9.33628 12.3981 10.5473 12.1585 11.3531 11.3542C12.1589 10.5499 12.4006 9.33924 11.9655 8.28712C11.5305 7.235 10.5043 6.54869 9.36578 6.54835C8.61943 6.54626 7.90296 6.84148 7.37474 7.36877C6.84651 7.89605 6.55002 8.61199 6.55078 9.35835"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M32.375 28.455C34.6132 25.2207 35.4692 21.2275 34.7533 17.36"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M33.4487 30.645C33.4504 29.5064 32.7659 28.4791 31.7146 28.0421C30.6632 27.6052 29.4522 27.8448 28.6464 28.6491C27.8406 29.4534 27.5989 30.6641 28.034 31.7162C28.469 32.7683 29.4952 33.4546 30.6337 33.455C31.3801 33.457 32.0965 33.1618 32.6248 32.6345C33.153 32.1073 33.4495 31.3913 33.4487 30.645"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M11.5625 32.38C14.807 34.6148 18.8066 35.4686 22.6808 34.7533"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M9.36578 33.4533C10.9157 33.4496 12.1696 32.191 12.1674 30.6411C12.1653 29.0912 10.9079 27.8361 9.35801 27.8367C7.80809 27.8373 6.55171 29.0934 6.55078 30.6433C6.55059 31.3895 6.84726 32.1051 7.37536 32.6323C7.90346 33.1594 8.6196 33.4549 9.36578 33.4533"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <rect x="15" y="14.9994" width="10" height="10" rx="1.40007" stroke="#4B23EB"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.5013 13.3334V15" stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M22.5013 13.3334V15" stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M17.5013 25V26.6667" stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M22.5013 25V26.6667" stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M13.332 22.5H14.9987" stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M13.332 17.5H14.9987" stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M25 22.5H26.6667" stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M25 17.5H26.6667" stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="a-info-card__block-info">
+                  <span class="a-info-card__title">
+                    Оборудование для автоматизации
+                  </span>
+                  <span class="a-info-card__subtitle">
+                  </span>
+                </div>
+              </div>
+              <div class="a-info-card">
+                <div class="a-info-card__block-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
+                  fill="none">
+                    <rect x="5.32812" y="4.99377" width="30.0125" height="30.0125" rx="3"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <rect x="16.2969" y="15.965" width="8.07004" height="8.07004" rx="1.12939"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M11.3194 10.9053C11.3194 10.9514 11.2821 10.9887 11.236 10.9887C11.19 10.9887 11.1527 10.9514 11.1527 10.9053C11.1527 10.8593 11.19 10.822 11.236 10.822"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M11.2373 10.822C11.2834 10.822 11.3207 10.8594 11.3207 10.9054"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M17.3858 10.9053C17.3858 10.9514 17.3485 10.9887 17.3024 10.9887C17.2564 10.9887 17.2191 10.9514 17.2191 10.9053C17.2191 10.8593 17.2564 10.822 17.3024 10.822"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M17.2998 10.8219C17.3459 10.8219 17.3832 10.8592 17.3832 10.9053"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M23.4483 10.9053C23.4483 10.9514 23.411 10.9887 23.3649 10.9887C23.3189 10.9887 23.2816 10.9514 23.2816 10.9053C23.2816 10.8593 23.3189 10.822 23.3649 10.822"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M23.3623 10.8219C23.4084 10.8219 23.4457 10.8592 23.4457 10.9053"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M29.5108 10.9053C29.5108 10.9514 29.4735 10.9887 29.4274 10.9887C29.3814 10.9887 29.3441 10.9514 29.3441 10.9053C29.3441 10.8593 29.3814 10.822 29.4274 10.822"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M29.4287 10.8219C29.4748 10.8219 29.5121 10.8592 29.5121 10.9053"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M29.5108 16.9684C29.5108 17.0145 29.4735 17.0518 29.4274 17.0518C29.3814 17.0518 29.3441 17.0145 29.3441 16.9684C29.3441 16.9224 29.3814 16.8851 29.4274 16.8851"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M29.4287 16.8851C29.4508 16.8851 29.472 16.8939 29.4877 16.9096C29.5033 16.9252 29.5121 16.9464 29.5121 16.9685"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M29.5108 23.0316C29.5108 23.0776 29.4735 23.1149 29.4274 23.1149C29.3814 23.1149 29.3441 23.0776 29.3441 23.0316C29.3441 22.9855 29.3814 22.9482 29.4274 22.9482"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M29.4287 22.9482C29.4748 22.9482 29.5121 22.9856 29.5121 23.0316"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M29.5108 29.0948C29.5108 29.1408 29.4735 29.1782 29.4274 29.1782C29.3814 29.1782 29.3441 29.1408 29.3441 29.0948C29.3441 29.0487 29.3814 29.0114 29.4274 29.0114"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M29.4287 29.0114C29.4748 29.0114 29.5121 29.0487 29.5121 29.0947"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M23.4483 29.0948C23.4483 29.1408 23.411 29.1782 23.3649 29.1782C23.3189 29.1782 23.2816 29.1408 23.2816 29.0948C23.2816 29.0487 23.3189 29.0114 23.3649 29.0114"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M23.3623 29.0114C23.4084 29.0114 23.4457 29.0487 23.4457 29.0947"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M17.3858 29.0948C17.3858 29.1408 17.3485 29.1782 17.3024 29.1782C17.2564 29.1782 17.2191 29.1408 17.2191 29.0948C17.2191 29.0487 17.2564 29.0114 17.3024 29.0114"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M17.2998 29.0114C17.3459 29.0114 17.3832 29.0487 17.3832 29.0947"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M11.3194 29.0948C11.3194 29.1408 11.2821 29.1782 11.236 29.1782C11.19 29.1782 11.1527 29.1408 11.1527 29.0948C11.1527 29.0487 11.19 29.0114 11.236 29.0114"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M11.2373 29.0114C11.2834 29.0114 11.3207 29.0487 11.3207 29.0947"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M11.3194 23.0316C11.3194 23.0776 11.2821 23.1149 11.236 23.1149C11.19 23.1149 11.1527 23.0776 11.1527 23.0316C11.1527 22.9855 11.19 22.9482 11.236 22.9482"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M11.2373 22.9482C11.2834 22.9482 11.3207 22.9856 11.3207 23.0316"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M11.3194 16.9684C11.3194 17.0145 11.2821 17.0518 11.236 17.0518C11.19 17.0518 11.1527 17.0145 11.1527 16.9684C11.1527 16.9224 11.19 16.8851 11.236 16.8851"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M11.2373 16.8851C11.2594 16.8851 11.2806 16.8939 11.2963 16.9096C11.3119 16.9252 11.3207 16.9464 11.3207 16.9685"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="a-info-card__block-info">
+                  <span class="a-info-card__title">
+                    Автоматизированные линии укладки
+                  </span>
+                  <span class="a-info-card__subtitle">
+                  </span>
+                </div>
+              </div>
+              <div class="a-info-card">
+                <div class="a-info-card__block-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
+                  fill="none">
+                    <path d="M35.3222 15.8725C36.6389 17.1893 36.6389 19.3241 35.3222 20.6408C34.0055 21.9575 31.8707 21.9575 30.5539 20.6408C29.2372 19.3241 29.2372 17.1893 30.5539 15.8725C31.8707 14.5558 34.0055 14.5558 35.3222 15.8725"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M24.3393 9.85397C26.3668 11.8814 26.3668 15.1686 24.3393 17.1961C22.3118 19.2236 19.0246 19.2236 16.9972 17.1961C14.9697 15.1686 14.9697 11.8815 16.9972 9.85397C19.0246 7.82651 22.3118 7.82651 24.3393 9.85397"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M10.7831 15.8725C12.0999 17.1893 12.0999 19.3241 10.7831 20.6408C9.46641 21.9575 7.3316 21.9575 6.01488 20.6408C4.69816 19.3241 4.69816 17.1893 6.01488 15.8725C7.3316 14.5558 9.46642 14.5558 10.7831 15.8725"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M39.0017 31.6667V29.84C39.0017 27.5383 37.1367 25.6733 34.835 25.6733H33.5"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M2.33594 31.6667V29.84C2.33594 27.5383 4.20094 25.6733 6.5026 25.6733H7.8376"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M29.5679 31.6667V28.9984C29.5679 25.7767 26.9562 23.165 23.7345 23.165H17.6029C14.3812 23.165 11.7695 25.7767 11.7695 28.9984V31.6667"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="a-info-card__block-info">
+                  <span class="a-info-card__title">
+                    Промышленных роботов
+                  </span>
+                  <span class="a-info-card__subtitle">
+                  </span>
+                </div>
+              </div>
+              <div class="a-info-card">
+                <div class="a-info-card__block-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                  fill="none">
+                    <path d="M10.922 18.3333H6.66536C4.8237 18.3333 3.33203 16.8416 3.33203 14.9999V6.66659C3.33203 4.82492 4.8237 3.33325 6.66536 3.33325H33.332C35.1737 3.33325 36.6654 4.82492 36.6654 6.66659V14.9999C36.6654 16.8416 35.1737 18.3333 33.332 18.3333H15.922"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9236 21.6667V14.1667C15.9236 12.7867 14.8036 11.6667 13.4236 11.6667C12.0436 11.6667 10.9236 12.7867 10.9236 14.1667V26.6667L9.42198 25.1651C8.41031 24.1534 6.77031 24.1534 5.75865 25.1651C4.88531 26.0384 4.75031 27.4067 5.43531 28.4334L9.93365 35.1817C10.552 36.1101 11.5936 36.6667 12.7086 36.6667H21.522C23.2036 36.6667 24.6203 35.4151 24.8303 33.7467L25.7336 26.5184C25.9553 24.7401 24.732 23.1034 22.9636 22.8151L15.9236 21.6667Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M29.572 10.8317C29.572 10.6067 29.3904 10.425 29.1654 10.4267C28.9404 10.4267 28.7587 10.6083 28.7587 10.8333C28.7587 11.0583 28.9404 11.24 29.1654 11.24C29.3904 11.24 29.572 11.0583 29.572 10.8317"
+                    stroke="#4B23EB" stroke-width="1.625" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M22.908 10.8317C22.908 10.6067 22.7263 10.425 22.5013 10.4267C22.2763 10.4267 22.0946 10.6083 22.0946 10.8333C22.0946 11.0583 22.2763 11.24 22.5013 11.24C22.7246 11.24 22.908 11.0583 22.908 10.8317"
+                    stroke="#4B23EB" stroke-width="1.625" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="a-info-card__block-info">
+                  <span class="a-info-card__title">
+                    Пневмомеханические захваты
+                  </span>
+                  <span class="a-info-card__subtitle">
+                  </span>
+                </div>
+              </div>
+              <div class="a-info-card">
+                <div class="a-info-card__block-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="34" viewBox="0 0 33 34"
+                  fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.2933 14.6665H16.7011C16.1266 14.6665 15.5788 14.9091 15.1927 15.3345C14.8066 15.76 14.6181 16.3287 14.6736 16.9005L16.0291 30.8526C16.1474 32.0707 17.1712 32.9998 18.395 32.9998H27.5994C28.8232 32.9998 29.847 32.0707 29.9653 30.8526L31.3208 16.9005C31.3764 16.3287 31.1879 15.76 30.8018 15.3345C30.4157 14.9091 29.8678 14.6665 29.2933 14.6665V14.6665Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4865 1.33325C12.2512 1.33325 12.8711 1.95317 12.8711 2.71788V6.87177C12.8711 7.63648 12.2512 8.2564 11.4865 8.2564H6.17872C5.41401 8.2564 4.79409 7.63648 4.79409 6.87177V2.71788C4.79409 1.95317 5.41401 1.33325 6.17872 1.33325L11.4865 1.33325Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M11.8281 7.87793L14.8306 11.8812C15.464 12.7374 15.9073 13.719 16.1307 14.7604"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                    <path d="M5.8348 7.87769L2.83203 11.8813C1.85837 13.1795 1.33204 14.7585 1.33203 16.3813V29.6666C1.33203 31.5076 2.82442 33 4.66536 33H12.9987C14.3196 32.9991 15.5152 32.2177 16.0462 31.0082"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="a-info-card__block-info">
+                  <span class="a-info-card__title">
+                    Программное обеспечение для роботизированных комплексов
+                  </span>
+                  <span class="a-info-card__subtitle">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--+a-info-services()-->
+        <section class="gallery" id="gallery" data-scroll-section data-scroll-id="section2">
+          <div class="container">
+            <div class="integration-solutions-page__gallary-block-title smooth-show"
+            data-scroll data-scroll-offset="120" data-scroll-repeat>
+              <h2 class="title__h2 gallery__title">
+                Примеры роботизированных комплексов
+              </h2>
+              <span class="integration-solutions-page__gallary-subtitle">
+                Интеграция робота на площадке заказчика
+              </span>
+            </div>
+            <div class="a-images-slider smooth-show" data-scroll data-scroll-offset="120"
+            data-scroll-repeat>
+              <div class="swiper-wrapper">
+                <div class="a-images-slider__item swiper-slide">
+                  <img src="assets/images/gallery_1.jpg" alt="slide">
+                </div>
+                <div class="a-images-slider__item swiper-slide">
+                  <img src="assets/images/photo1.png" alt="slide">
+                </div>
+                <div class="a-images-slider__item swiper-slide">
+                  <img src="assets/images/photo2.jpg" alt="slide">
+                </div>
+              </div>
+              <div class="a-images-slider__controls">
+                <div class="slick-prev slick-arrow">
+                </div>
+                <div class="swiper-pagination">
+                </div>
+                <div class="slick-next slick-arrow">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="a-anime-tabs" data-scroll-section data-scroll-id="a-anime-tabs"
+        data-a-anime-tabs="main">
+          <div class="container">
+            <div class="a-anime-tabs__wrap-info smooth-show" data-scroll data-scroll-offset="120"
+            data-scroll-repeat>
+              <h2 class="a-anime-tabs__title">
+                Как мы находим лучшее решение
+              </h2>
+              <div class="a-anime-tabs__wrap-tabs">
+                <div class="a-anime-tabs__tab active" data-a-anime-tabs="tab">
+                  <h3 class="a-anime-tabs__tab-title">
+                    Разрабатываем программное обеспечение
+                  </h3>
+                  <div class="a-anime-tabs__tab-text" data-a-anime-tabs="tab-text">
+                    <p>
+                      Адаптируем ПО и оборудование импортных поставщиков. Ставим собственное
+                      программное обеспечение с HMI на русском языке. Устанавливаем собственное
+                      программное обеспечение по диспетчеризации и аналитике производства
+                    </p>
+                  </div>
+                </div>
+                <div class="a-anime-tabs__tab" data-a-anime-tabs="tab">
+                  <h3 class="a-anime-tabs__tab-title">
+                    Модернизируем системы управления
+                  </h3>
+                  <div class="a-anime-tabs__tab-text" data-a-anime-tabs="tab-text">
+                    <ul>
+                      <li>
+                        Проводим модернизацию систем управления любых производственных машин
+                      </li>
+                      <li>
+                        Меняем контроллеры и автоматику, разрабатываем программное обеспечение
+                        для промышленных логических контроллеров и панелей оператора и АРМ
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="a-anime-tabs__tab" data-a-anime-tabs="tab">
+                  <h3 class="a-anime-tabs__tab-title">
+                    Обслуживаем оборудование
+                  </h3>
+                  <div class="a-anime-tabs__tab-text" data-a-anime-tabs="tab-text">
+                    <ul>
+                      <li>
+                        Проводим монтажные и пусконаладочные работы на площадке заказчика
+                      </li>
+                      <li>
+                        Минимизируем поломки, сбои оборудования и отдельных его узлов, чтобы устранить
+                        простои производства
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="a-anime-tabs__wrap-images smooth-show" data-scroll data-scroll-offset="120"
+            data-scroll-repeat>
+              <div class="a-anime-tabs__block-image active" data-a-anime-tabs="image">
+                <img class="a-anime-tabs__image" src="assets/images/anime-tabs-1.jpg"
+                alt="Разрабатываем программное обеспечение">
+              </div>
+              <div class="a-anime-tabs__block-image" data-a-anime-tabs="image">
+                <img class="a-anime-tabs__image" src="assets/images/anime-tabs-2.jpg"
+                alt="Модернизируем системы управления">
+              </div>
+              <div class="a-anime-tabs__block-image" data-a-anime-tabs="image">
+                <img class="a-anime-tabs__image" src="assets/images/anime-tabs-3.jpg"
+                alt="Обслуживаем оборудование">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="a-section-cards a-section-cards--theme--gray" data-scroll-section
+        data-scroll-id="a-section-cards-2">
+          <div class="container">
+            <h2 class="a-section-cards__title smooth-show" data-scroll data-scroll-offset="120"
+            data-scroll-repeat>
+              Результаты после внедрения автоматизации:
+            </h2>
+            <div class="a-section-cards__wrap-cards smooth-show" data-scroll data-scroll-offset="120"
+            data-scroll-repeat>
+              <div class="a-info-card">
+                <div class="a-info-card__block-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                  fill="none">
+                    <path d="M14.1654 31.6668H13.332C6.66536 31.6668 3.33203 30.0002 3.33203 21.6668V13.3335C3.33203 6.66683 6.66536 3.3335 13.332 3.3335H26.6654C33.332 3.3335 36.6654 6.66683 36.6654 13.3335V21.6668C36.6654 28.3335 33.332 31.6668 26.6654 31.6668H25.832C25.3154 31.6668 24.8154 31.9168 24.4987 32.3335L21.9987 35.6668C20.8987 37.1335 19.0987 37.1335 17.9987 35.6668L15.4987 32.3335C15.232 31.9668 14.6154 31.6668 14.1654 31.6668Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M11.668 13.3335H28.3346" stroke="#4B23EB" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M11.668 21.6665H21.668" stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="a-info-card__block-info">
+                  <span class="a-info-card__title">
+                    Увеличение объема выпуска
+                  </span>
+                  <span class="a-info-card__subtitle">
+                  </span>
+                </div>
+              </div>
+              <div class="a-info-card">
+                <div class="a-info-card__block-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
+                  fill="none">
+                    <path d="M33.3145 24.8832C29.8811 28.2999 24.9645 29.3499 20.6478 27.9999L12.7978 35.8332C12.2311 36.4165 11.1145 36.7665 10.3145 36.6499L6.68114 36.1499C5.48114 35.9832 4.36447 34.8499 4.18114 33.6499L3.68114 30.0165C3.56447 29.2165 3.9478 28.0999 4.4978 27.5332L12.3311 19.6999C10.9978 15.3665 12.0311 10.4499 15.4645 7.0332C20.3811 2.11654 28.3645 2.11654 33.2978 7.0332C38.2311 11.9499 38.2311 19.9665 33.3145 24.8832Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M11.8164 29.1499L15.6497 32.9832" stroke="#4B23EB" stroke-width="1.5"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M24.5 18.3335C25.8807 18.3335 27 17.2142 27 15.8335C27 14.4528 25.8807 13.3335 24.5 13.3335C23.1193 13.3335 22 14.4528 22 15.8335C22 17.2142 23.1193 18.3335 24.5 18.3335Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="a-info-card__block-info">
+                  <span class="a-info-card__title">
+                    Снижение себестоимости продукции
+                  </span>
+                  <span class="a-info-card__subtitle">
+                  </span>
+                </div>
+              </div>
+              <div class="a-info-card">
+                <div class="a-info-card__block-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
+                  fill="none">
+                    <path d="M34 20.3331V23.1665C34 28.4165 31 30.6665 26.5 30.6665H11.5C7 30.6665 4 28.4165 4 23.1665V14.1665C4 8.9165 7 6.6665 11.5 6.6665H16C15.7833 7.29984 15.6667 7.99984 15.6667 8.74984V15.2499C15.6667 16.8665 16.2 18.2332 17.15 19.1832C18.1 20.1332 19.4667 20.6665 21.0833 20.6665V22.9832C21.0833 23.8332 22.05 24.3498 22.7667 23.8831L27.5833 20.6665H31.9167C32.6667 20.6665 33.3667 20.5498 34 20.3331Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M37.3346 8.75016V15.2502C37.3346 17.7335 36.068 19.6001 34.0013 20.3334C33.368 20.5501 32.668 20.6669 31.918 20.6669H27.5846L22.768 23.8834C22.0513 24.3501 21.0846 23.8336 21.0846 22.9836V20.6669C19.468 20.6669 18.1013 20.1335 17.1513 19.1835C16.2013 18.2335 15.668 16.8669 15.668 15.2502V8.75016C15.668 8.00016 15.7846 7.30016 16.0013 6.66683C16.7346 4.60016 18.6013 3.3335 21.0846 3.3335H31.918C35.168 3.3335 37.3346 5.50016 37.3346 8.75016Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M13 36.6665H25" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19 30.6665V36.6665" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M31.4938 12.0833H31.5088" stroke="#4B23EB" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M26.8258 12.0833H26.8408" stroke="#4B23EB" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M22.1618 12.0833H22.1768" stroke="#4B23EB" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="a-info-card__block-info">
+                  <span class="a-info-card__title">
+                    Уменьшение количества брака
+                  </span>
+                  <span class="a-info-card__subtitle">
+                  </span>
+                </div>
+              </div>
+              <div class="a-info-card">
+                <div class="a-info-card__block-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
+                  fill="none">
+                    <path d="M34 20.3331V23.1665C34 28.4165 31 30.6665 26.5 30.6665H11.5C7 30.6665 4 28.4165 4 23.1665V14.1665C4 8.9165 7 6.6665 11.5 6.6665H16C15.7833 7.29984 15.6667 7.99984 15.6667 8.74984V15.2499C15.6667 16.8665 16.2 18.2332 17.15 19.1832C18.1 20.1332 19.4667 20.6665 21.0833 20.6665V22.9832C21.0833 23.8332 22.05 24.3498 22.7667 23.8831L27.5833 20.6665H31.9167C32.6667 20.6665 33.3667 20.5498 34 20.3331Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M37.3346 8.75016V15.2502C37.3346 17.7335 36.068 19.6001 34.0013 20.3334C33.368 20.5501 32.668 20.6669 31.918 20.6669H27.5846L22.768 23.8834C22.0513 24.3501 21.0846 23.8336 21.0846 22.9836V20.6669C19.468 20.6669 18.1013 20.1335 17.1513 19.1835C16.2013 18.2335 15.668 16.8669 15.668 15.2502V8.75016C15.668 8.00016 15.7846 7.30016 16.0013 6.66683C16.7346 4.60016 18.6013 3.3335 21.0846 3.3335H31.918C35.168 3.3335 37.3346 5.50016 37.3346 8.75016Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M13 36.6665H25" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19 30.6665V36.6665" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M31.4938 12.0833H31.5088" stroke="#4B23EB" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M26.8258 12.0833H26.8408" stroke="#4B23EB" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M22.1618 12.0833H22.1768" stroke="#4B23EB" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="a-info-card__block-info">
+                  <span class="a-info-card__title">
+                    Повышение производительности
+                  </span>
+                  <span class="a-info-card__subtitle">
+                  </span>
+                </div>
+              </div>
+              <div class="a-info-card">
+                <div class="a-info-card__block-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40"
+                  fill="none">
+                    <path d="M34 20.3331V23.1665C34 28.4165 31 30.6665 26.5 30.6665H11.5C7 30.6665 4 28.4165 4 23.1665V14.1665C4 8.9165 7 6.6665 11.5 6.6665H16C15.7833 7.29984 15.6667 7.99984 15.6667 8.74984V15.2499C15.6667 16.8665 16.2 18.2332 17.15 19.1832C18.1 20.1332 19.4667 20.6665 21.0833 20.6665V22.9832C21.0833 23.8332 22.05 24.3498 22.7667 23.8831L27.5833 20.6665H31.9167C32.6667 20.6665 33.3667 20.5498 34 20.3331Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M37.3346 8.75016V15.2502C37.3346 17.7335 36.068 19.6001 34.0013 20.3334C33.368 20.5501 32.668 20.6669 31.918 20.6669H27.5846L22.768 23.8834C22.0513 24.3501 21.0846 23.8336 21.0846 22.9836V20.6669C19.468 20.6669 18.1013 20.1335 17.1513 19.1835C16.2013 18.2335 15.668 16.8669 15.668 15.2502V8.75016C15.668 8.00016 15.7846 7.30016 16.0013 6.66683C16.7346 4.60016 18.6013 3.3335 21.0846 3.3335H31.918C35.168 3.3335 37.3346 5.50016 37.3346 8.75016Z"
+                    stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                    <path d="M13 36.6665H25" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19 30.6665V36.6665" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M31.4938 12.0833H31.5088" stroke="#4B23EB" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M26.8258 12.0833H26.8408" stroke="#4B23EB" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M22.1618 12.0833H22.1768" stroke="#4B23EB" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="a-info-card__block-info">
+                  <span class="a-info-card__title">
+                    Экономия затрат в ФОТ
+                  </span>
+                  <span class="a-info-card__subtitle">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="a-form" data-scroll-section data-scroll-id="a-form">
+          <div class="container">
+            <form class="a-form__form" action="#" data-validate novalidate>
+              <div class="a-form__header">
+                <span class="a-form__subtitle">
+                  Закажите автоматизацию 4.0
+                </span>
+                <h2 class="a-form__title">
+                  Будьте эффективнее конкурентов
+                </h2>
+              </div>
+              <div class="a-form__block-inputs">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="name" placeholder="Имя">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <button class="a-form__btn-submit btn-reset" type="submit">
+                <span>
+                  Обратный звонок
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none">
+                  <path d="M20.7741 15.0281L16.3453 13.0434C16.1447 12.9575 15.9257 12.9229 15.7083 12.9429C15.4909 12.9628 15.282 13.0367 15.1003 13.1578C15.0819 13.1696 15.0643 13.1828 15.0478 13.1972L12.7331 15.1659C12.7091 15.179 12.6824 15.1863 12.655 15.1873C12.6277 15.1883 12.6005 15.1829 12.5756 15.1716C11.0878 14.4534 9.54657 12.9216 8.82564 11.4544C8.81363 11.4299 8.80739 11.4029 8.80739 11.3756C8.80739 11.3483 8.81363 11.3214 8.82564 11.2969L10.8009 8.95312C10.8151 8.93578 10.8283 8.91762 10.8403 8.89874C10.9598 8.7164 11.0319 8.50719 11.0502 8.29C11.0685 8.0728 11.0325 7.85446 10.9453 7.65468L8.9747 3.23343C8.86279 2.97244 8.66925 2.75478 8.42313 2.61313C8.17701 2.47147 7.89159 2.41346 7.6097 2.44781C6.3846 2.60886 5.26006 3.2105 4.44622 4.14027C3.63238 5.07005 3.18494 6.26435 3.18751 7.49999C3.18751 14.8406 9.15939 20.8125 16.5 20.8125C17.7356 20.8149 18.9298 20.3673 19.8595 19.5536C20.7893 18.7398 21.3909 17.6153 21.5522 16.3903C21.5865 16.1097 21.5292 15.8256 21.389 15.5802C21.2488 15.3347 21.0332 15.1411 20.7741 15.0281ZM16.5 19.6875C9.78001 19.6875 4.31251 14.22 4.31251 7.49999C4.30938 6.53805 4.65658 5.60787 5.28924 4.88325C5.9219 4.15863 6.79675 3.68914 7.75032 3.56249H7.77189C7.80967 3.5632 7.84635 3.5753 7.87713 3.59722C7.90791 3.61913 7.93136 3.64984 7.94439 3.68531L9.92251 8.10187C9.93379 8.12642 9.93963 8.15313 9.93963 8.18015C9.93963 8.20717 9.93379 8.23387 9.92251 8.25843L7.94345 10.6078C7.92868 10.6246 7.91521 10.6424 7.90314 10.6612C7.7793 10.8503 7.70637 11.0681 7.69143 11.2936C7.67648 11.5191 7.72002 11.7447 7.81782 11.9484C8.64939 13.6509 10.365 15.3534 12.0863 16.185C12.2912 16.2823 12.5178 16.3247 12.7441 16.3083C12.9703 16.2919 13.1885 16.2171 13.3772 16.0912C13.395 16.0791 13.4128 16.0659 13.4297 16.0519L15.7434 14.0831C15.7663 14.0708 15.7915 14.0636 15.8174 14.062C15.8433 14.0604 15.8692 14.0644 15.8934 14.0737L20.3231 16.0584C20.3593 16.0738 20.3897 16.1002 20.4101 16.1339C20.4305 16.1675 20.4397 16.2067 20.4366 16.2459C20.3106 17.1999 19.8415 18.0754 19.1171 18.7088C18.3926 19.3422 17.4623 19.6901 16.5 19.6875Z"
+                  fill="#4B23EB" />
+                </svg>
+              </button>
+              <div class="a-form__privacy-policy">
+                <div class="checkbox   checkbox--privacy-policy">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input" type="checkbox" name="" value="" required>
+                    <span class="checkbox__text">
+                      Cогласен с условиями
+                      <a href="#">
+                        политики конфиденциальности сайта
+                      </a>
+                    </span>
+                    <span class="checkbox__decore">
+                    </span>
+                    <span class="checkbox__message">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="a-form__block-image smooth-show" data-scroll data-scroll-offset="120"
+          data-scroll-repeat>
+            <img class="a-form__image" src="assets/images/form-image.png" alt="Будьте эффективнее конкурентов">
+          </div>
+        </section>
+      </div>
+      <footer class="footer" data-scroll-section data-scroll-id="section11">
+        <div class="container">
+          <div class="footer__main">
+            <div class="footer__left">
+              <a class="footer__logo">
+                <img src="assets/icons/logo.svg" alt="logo">
+              </a>
+              <div class="footer__social">
+                <a class="footer__social-link">
+                  <img src="assets/icons/tg.svg" alt="telegram">
+                </a>
+                <a class="footer__social-link">
+                  <img src="assets/icons/youtube.svg" alt="youtube">
+                </a>
+                <a class="footer__social-link">
+                  <img src="assets/icons/wa.svg" alt="wa">
+                </a>
+                <a class="footer__social-link">
+                  <img src="assets/icons/dzen.svg" alt="dzen">
+                </a>
+              </div>
+              <div class="footer__address">
+                <div class="footer__address-title">
+                  Адреса
+                </div>
+                <div class="footer__address-text">
+                  г.Москва, ул. Усачева, 62
+                </div>
+                <div class="footer__address-text">
+                  г. Пермь, ул. Докучаева, д. 50
+                </div>
+              </div>
+            </div>
+            <div class="footer__links">
+              <a class="footer__link" href="javascript:void(0);">
+                Продукты
+              </a>
+              <a class="footer__link" href="javascript:void(0);">
+                Кейсы
+              </a>
+              <a class="footer__link" href="javascript:void(0);">
+                Услуги
+              </a>
+              <a class="footer__link" href="javascript:void(0);">
+                О компании
+              </a>
+              <a class="footer__link" href="javascript:void(0);">
+                Контакты
+              </a>
+            </div>
+            <div class="footer__contacts">
+              <p>
+                Все условия и предложения уточняйте
+                <br>
+                у менеджеров по телефону
+              </p>
+              <div class="footer__contacts-link-wrapper">
+                <a class="footer__tel" href="mailto:sale@af.expert">
+                  sale@af.expert
+                </a>
+                <a class="footer__tel" href="tel:+78007073187">
+                  7 (800) 707-31-87
+                </a>
+              </div>
+              <div class="footer__contacts-btn-wrapper">
+                <a class="btn__big-blue" href="javascript:void(0);" data-hystmodal="#m-application">
+                  Узнать больше
+                </a>
+                <button class="btn__up upButton">
+                  <img src="assets/icons/white-arrow-right.svg" alt="arrow-icon">
+                  <span>
+                    Вверх
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bot">
+            <p>
+              © 2023 ООО «Меридиан Автоматизация»
+            </p>
+            <div class="footer__docs">
+              <a href="javascript:void(0);">
+                Политика конфиденциальности данных
+              </a>
+              <a href="javascript:void(0);">
+                Политика охраны труда
+              </a>
+            </div>
+            <div class="footer__development">
+              <a href="https://kompot.bz">
+                <img src="assets/icons/kompot.svg" alt="kompot">
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="a-cookies" data-a-cookies="main">
+      <span class="a-cookies__text">
+        Мы используем файлы cookie, чтобы улучшать сайт для Вас. Оставаясь на
+        сайте, Вы соглашаетесь с
+        <a href="#">
+          условиями использования
+        </a>
+        файлов cookie.
+      </span>
+      <button class="a-cookies__btn" data-a-cookies="btn">
+        Согласен
+      </button>
+    </div>
+    <div class="hystmodal modal m-vacancy " id="m-vacancy" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Отклик на вакансию
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="input   ">
+                <input class="input__field" type="text" name="post" placeholder="Желаемая должность*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="email" placeholder="ivanov@mail.ru"
+                  required>
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="input">
+                <label class="input__label-upload" for="uploadFile">
+                  <span class="input__label-upload-icon">
+                    +
+                  </span>
+                  <span class="input__label-upload-text">
+                    Прикрепить резюме (макс. 10 МБ)
+                  </span>
+                  <span class="input__label-upload-fileName">
+                  </span>
+                  <span class="input__label-upload-fileSize">
+                  </span>
+                  <span class="input__label-upload-fileRemove" title="Выбрать другой файл">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                    fill="none">
+                      <g clip-path="url(#clip0_2924_9512)">
+                        <path d="M15.625 4.375L4.375 15.625" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15.625 15.625L4.375 4.375" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2924_9512">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </label>
+                <input class="input__field" id="uploadFile" type="file" accept=".doc,.pdf"
+                name="file">
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваше резюме отправлено
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Откликнуться
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Откликнуться еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="hystmodal modal m-application " id="m-application" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Оставьте заявку, и с вами свяжется менеджер
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="email" placeholder="ivanov@mail.ru">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="textarea   ">
+                <textarea class="textarea__field" type="text" name="textarea" placeholder="Комментарий, если есть, что добавить">
+                </textarea>
+                <span class="textarea__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваша заявка отправлена
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Отправить
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Отправить еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="hystmodal modal m-consultation " id="m-consultation" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Запросить консультацию
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="inn" placeholder="ИНН" data-input-mask="inn">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="textarea   ">
+                <textarea class="textarea__field" type="text" name="textarea" placeholder="Комментарий, если есть, что добавить">
+                </textarea>
+                <span class="textarea__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваша заявка отправлена
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Отправить
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Отправить еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="hystmodal modal m-cost " id="m-cost" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Запросить стоимость
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="inn" placeholder="ИНН" data-input-mask="inn">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="textarea   ">
+                <textarea class="textarea__field" type="text" name="textarea" placeholder="Комментарий, если есть, что добавить">
+                </textarea>
+                <span class="textarea__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваша заявка отправлена
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Отправить
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Отправить еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+</html>

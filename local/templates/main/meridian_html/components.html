@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ru">
+  
+  <head>
+    <meta charset="UTF-8">
+    <link href="assets/css/index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/jquery-ui-slider@1.12.1/jquery-ui.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hystmodal@1.0.1/dist/hystmodal.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="assets/scripts/index.1.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    defer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-slider@1.12.1/jquery-ui.min.js"
+    defer>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
+    defer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"
+    defer>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"
+    defer integrity="sha512-efAcjYoYT0sXxQRtxGY37CKYmqsFVOIwMApaEbrxJr4RwqVVGw8o+Lfh/+59TU07+suZn1BWq4fDl5fdgyCNkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer>
+    </script>
+    <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js"
+    defer>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/hystmodal@1.0.1/dist/hystmodal.min.js"
+    defer>
+    </script>
+    <title>
+      Компоненты
+    </title>
+  </head>
+  
+  <body>
+    <main>
+      <div class="components-page">
+        <div class="components-page__content">
+          <div class="components-page__box">
+            <button class="header__btn header__btn-collback blue" data-hystmodal="#m-application">
+              Обратный звонок
+            </button>
+            <button class="header__btn header__btn-collback blue" data-hystmodal="#m-application-success">
+              Обратный звонок - успешно
+            </button>
+          </div>
+          <div class="components-page__box">
+            <button class="header__btn header__btn-collback blue" data-hystmodal="#m-vacancy">
+              Отклик на вакансию
+            </button>
+            <button class="header__btn header__btn-collback blue" data-hystmodal="#m-vacancy-success">
+              Отклик на вакансию - успешно
+            </button>
+          </div>
+          <div class="components-page__box">
+            <button class="header__btn header__btn-collback blue" data-hystmodal="#m-consultation">
+              Запросить консультацию
+            </button>
+            <button class="header__btn header__btn-collback blue" data-hystmodal="#m-consultation-success">
+              Запросить консультацию - успешно
+            </button>
+          </div>
+          <div class="components-page__box">
+            <button class="header__btn header__btn-collback blue" data-hystmodal="#m-cost">
+              Запросить стоимость
+            </button>
+            <button class="header__btn header__btn-collback blue" data-hystmodal="#m-cost-success">
+              Запросить стоимость - успешно
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="hystmodal modal m-vacancy " id="m-vacancy" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Отклик на вакансию
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="input   ">
+                <input class="input__field" type="text" name="post" placeholder="Желаемая должность*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="email" placeholder="ivanov@mail.ru"
+                  required>
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="input">
+                <label class="input__label-upload" for="uploadFile">
+                  <span class="input__label-upload-icon">
+                    +
+                  </span>
+                  <span class="input__label-upload-text">
+                    Прикрепить резюме (макс. 10 МБ)
+                  </span>
+                  <span class="input__label-upload-fileName">
+                  </span>
+                  <span class="input__label-upload-fileSize">
+                  </span>
+                  <span class="input__label-upload-fileRemove" title="Выбрать другой файл">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                    fill="none">
+                      <g clip-path="url(#clip0_2924_9512)">
+                        <path d="M15.625 4.375L4.375 15.625" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15.625 15.625L4.375 4.375" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2924_9512">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </label>
+                <input class="input__field" id="uploadFile" type="file" accept=".doc,.pdf"
+                name="file">
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваше резюме отправлено
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Откликнуться
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Откликнуться еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="hystmodal modal m-vacancy modal--after-sending" id="m-vacancy-success"
+    aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Отклик на вакансию
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="input   ">
+                <input class="input__field" type="text" name="post" placeholder="Желаемая должность*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="email" placeholder="ivanov@mail.ru"
+                  required>
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="input">
+                <label class="input__label-upload" for="uploadFile">
+                  <span class="input__label-upload-icon">
+                    +
+                  </span>
+                  <span class="input__label-upload-text">
+                    Прикрепить резюме (макс. 10 МБ)
+                  </span>
+                  <span class="input__label-upload-fileName">
+                  </span>
+                  <span class="input__label-upload-fileSize">
+                  </span>
+                  <span class="input__label-upload-fileRemove" title="Выбрать другой файл">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                    fill="none">
+                      <g clip-path="url(#clip0_2924_9512)">
+                        <path d="M15.625 4.375L4.375 15.625" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15.625 15.625L4.375 4.375" stroke="white" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2924_9512">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                </label>
+                <input class="input__field" id="uploadFile" type="file" accept=".doc,.pdf"
+                name="file">
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваше резюме отправлено
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Откликнуться
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Откликнуться еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="hystmodal modal m-application " id="m-application" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Оставьте заявку, и с вами свяжется менеджер
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="email" placeholder="ivanov@mail.ru">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="textarea   ">
+                <textarea class="textarea__field" type="text" name="textarea" placeholder="Комментарий, если есть, что добавить">
+                </textarea>
+                <span class="textarea__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваша заявка отправлена
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Отправить
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Отправить еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="hystmodal modal m-application modal--after-sending" id="m-application-success"
+    aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Оставьте заявку, и с вами свяжется менеджер
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="email" placeholder="ivanov@mail.ru">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="textarea   ">
+                <textarea class="textarea__field" type="text" name="textarea" placeholder="Комментарий, если есть, что добавить">
+                </textarea>
+                <span class="textarea__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваша заявка отправлена
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Отправить
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Отправить еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="hystmodal modal m-consultation " id="m-consultation" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Запросить консультацию
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="inn" placeholder="ИНН" data-input-mask="inn">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="textarea   ">
+                <textarea class="textarea__field" type="text" name="textarea" placeholder="Комментарий, если есть, что добавить">
+                </textarea>
+                <span class="textarea__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваша заявка отправлена
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Отправить
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Отправить еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="hystmodal modal m-consultation modal--after-sending" id="m-consultation-success"
+    aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Запросить консультацию
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="inn" placeholder="ИНН" data-input-mask="inn">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="textarea   ">
+                <textarea class="textarea__field" type="text" name="textarea" placeholder="Комментарий, если есть, что добавить">
+                </textarea>
+                <span class="textarea__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваша заявка отправлена
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Отправить
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Отправить еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="hystmodal modal m-cost " id="m-cost" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Запросить стоимость
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="inn" placeholder="ИНН" data-input-mask="inn">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="textarea   ">
+                <textarea class="textarea__field" type="text" name="textarea" placeholder="Комментарий, если есть, что добавить">
+                </textarea>
+                <span class="textarea__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваша заявка отправлена
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Отправить
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Отправить еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="hystmodal modal m-cost modal--after-sending" id="m-cost-success"
+    aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <form class="hystmodal__window" role="dialog" aria-modal="true" novalidate
+        data-validate>
+          <button class="hystmodal__close btn-reset" type="button" data-hystclose>
+            <span class="modal__close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+                <path d="M25 7L7 25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+                <path d="M25 25L7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+          <div class="modal__wrap-content">
+            <h2 class="modal__title">
+              Запросить стоимость
+            </h2>
+            <div class="modal__wrap-fields">
+              <div class="input   ">
+                <input class="input__field" type="text" name="fi" placeholder="Имя Фамилия*"
+                required>
+                <span class="input__message">
+                  Обязательное поле
+                </span>
+              </div>
+              <div class="modal__inner-fields">
+                <div class="input   ">
+                  <input class="input__field" type="text" name="phone" placeholder="+7 (999) 999-99-99*"
+                  required data-input-mask="phone">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+                <div class="input   ">
+                  <input class="input__field" type="text" name="inn" placeholder="ИНН" data-input-mask="inn">
+                  <span class="input__message">
+                    Обязательное поле
+                  </span>
+                </div>
+              </div>
+              <div class="textarea   ">
+                <textarea class="textarea__field" type="text" name="textarea" placeholder="Комментарий, если есть, что добавить">
+                </textarea>
+                <span class="textarea__message">
+                  Обязательное поле
+                </span>
+              </div>
+            </div>
+            <div class="modal__after-sending">
+              <span class="modal__after-sending-title">
+                Ваша заявка отправлена
+              </span>
+              <span class="modal__after-sending-text">
+                Мы получили вашу заявку, наш менеджер свяжется с вами в ближайшее время
+              </span>
+            </div>
+          </div>
+          <div class="modal__wrap-btn">
+            <button class="a-form__btn-submit modal__btn-submit btn-reset" type="submit">
+              <span>
+                Отправить
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+              fill="none">
+                <path d="M19.75 5.5L5.75 19.5" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.75 15.77V5.5H9.48" stroke="#4B23EB" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="checkbox   checkbox--privacy-policy">
+              <label class="checkbox__label">
+                <input class="checkbox__input" type="checkbox" name="" value="" required>
+                <span class="checkbox__text">
+                  Cогласен с условиями
+                  <a href="#">
+                    политики конфиденциальности сайта
+                  </a>
+                </span>
+                <span class="checkbox__decore">
+                </span>
+                <span class="checkbox__message">
+                  Это поле обязательно для заполнения
+                </span>
+              </label>
+            </div>
+            <button class="a-form__btn-submit modal__btn-repeat btn-reset">
+              <span>
+                Отправить еще раз
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+</html>

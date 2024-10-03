@@ -1,0 +1,15 @@
+.a-map__wrap-map path {
+    stroke: #F5F7F9;
+    stroke-width: 1;
+    stroke-linejoin: round;
+}
+.a-map__wrap-map [data-code] {
+    fill: #FFFFFF;
+    transition: fill 0.2s;
+}
+.a-map__wrap-map [data-code]:hover {
+    fill: #bdc0c7;
+}
+.colorus {
+    fill:#DEE1E8;
+}
